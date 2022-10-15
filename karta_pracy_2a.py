@@ -15,8 +15,10 @@ else:
 from math import sqrt
 a = float(input())
 g = float(input())
-if (a + g) / 2 > sqrt(a * g) : print("tak, średnia arytmetyczna jest większa")
-else : print("nie, średnia erytmetyczna jest mniejsza")
+if (a + g) / 2 > sqrt(a * g) : 
+    print("tak, średnia arytmetyczna jest większa")
+else :
+    print("nie, średnia erytmetyczna jest mniejsza")
 
 #==============================================
 
