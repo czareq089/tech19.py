@@ -58,7 +58,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 
-if a + b > b + c > a and a + c > b:
+if a + b > c and b + c > a and a + c > b:
     print("tak, spełnia nierówność")
 else:
     print("nie spełnia nierówności")
