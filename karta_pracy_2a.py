@@ -15,23 +15,22 @@ else:
 from math import sqrt
 a = float(input())
 g = float(input())
-if (a + g) / 2 > sqrt(a * g) : 
-    print("tak, średnia arytmetyczna jest większa")
-else :
-    print("nie, średnia erytmetyczna jest mniejsza")
+if (a + g) / 2 > sqrt(a * g) : print("tak, średnia arytmetyczna jest większa")
+else : print("nie, średnia erytmetyczna jest mniejsza")
 
 #==============================================
 
 #3
-k = int(input())
-l = int(input())
-m = int(input())
-
-
-if k == l or l == m or k == m:
-    print ("tak")
+k = int(input("Podaj liczbe1: "))
+l = int(input("Podaj liczbe2: "))
+m = int(input("Podaj liczbe3: "))
+if k == l and k == m and l == m:
+    print("Wszystkie liczby sa sobie rowne")
+    if k == l: print("liczba1 i liczba2 sa sobie rowne")
+    elif k == m: print("liczba1 i liczba3 sa sobie rowne")
+    elif l == m: print("liczba2 i liczba3 sa sobie rowne")
 else:
-    print("nie")
+    print("Nie ma rownych sobie liczb")
 
 #==============================================
 
@@ -49,7 +48,8 @@ elif c < a and c < b and c < d:
     print (c)
  elif d < a and d < b and d < c:
     print (d)
-
+else:
+    print("są przynajmniej dwie najmniejsze liczby")
 #==============================================
 
 #5
@@ -58,7 +58,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 
-if b - c < a < b + c and a - c < b < a + c and a - b < c < a + b :
+if a + b > b + c > a and a + c > b:
     print("tak, spełnia nierówność")
 else:
     print("nie spełnia nierówności")
